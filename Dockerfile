@@ -1,6 +1,6 @@
 FROM python:3.10
 
-WORKDIR /tajmobile1
+WORKDIR /TamilanBotsZ
 
 COPY requirements.txt ./
 
