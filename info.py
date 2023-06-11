@@ -12,7 +12,10 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
+API_ID = int(environ.get('API_ID', '
+
+
+
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 # Bot settings
@@ -31,8 +34,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Autofilter: autofilter@cluster0.1lgwfsl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -71,6 +74,6 @@ if AUTO_DELETE == "True":
     AUTO_DELETE = True
 
 #Sample
-SHORTNER_SITE = ""
-SHORTNER_API = ""
+SHORTNER_SITE = "tajlink.com"
+SHORTNER_API = "4da29902b1ee99bd299d02d3e2bf25c22c62d06e"
 
